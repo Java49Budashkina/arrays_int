@@ -8,7 +8,7 @@ import java.util.Arrays;
 import static telran.array_int.Array_int.*;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Disabled;
+
 
 
 class Array_int_test {
@@ -69,12 +69,15 @@ class Array_int_test {
 	}
 	
 	@Test
-	@Disabled
+
 	void testBinarySearchInt() {
-		//Arrays.binarySearch(int[] array,int number)
-		//TODO
-		//Write tests for standard method binarySearch of the class Arrays taking array of ints and int number
+		int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 22};
+		assertTrue( Arrays.binarySearch(array, 3) == 2);
+		assertFalse( Arrays.binarySearch(array, 9) == 3);
+		assertTrue( Arrays.binarySearch(array, 10) < 0);
 		
+		int array1[] = {1,  4, 22, 5, 6, 7, 2, 3, 8};
+		assertFalse( Arrays.binarySearch(array1, 22) == 2);
 	}
 
 }
