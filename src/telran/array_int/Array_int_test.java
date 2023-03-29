@@ -18,10 +18,10 @@ class Array_int_test {
 		int array1[] = {1, 2, 3};
 		int expected1[] = {1, 2, 3, 4};
 		assertArrayEquals(expected1, addNumber(array1, 4));
-		//how check with empty array????
-		/*int array2[] = new int[0];
+		
+		int array2[] = new int[0];
 		int expected2[] = {12};
-		assertArrayEquals(expected2, Arrays.copyOf(array2, 12));*/
+		assertArrayEquals(expected2, addNumber(array2, 12));
 	}
 	@Test
 	void testRemoveNumber() {
