@@ -48,5 +48,15 @@ public class Array_int  {
 		return newArray;
 		
 	}
+	
+	public static int[] inseartNumberSorted(int[] arr, int value) {
+		int index = Arrays.binarySearch(arr, value);
+		if(index <0)
+		{
+			index = -index -1;
+		}
+		return insertNumber(arr, index, value);
+	
+	}
 }
 
